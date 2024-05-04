@@ -1,0 +1,18 @@
+@use "settings";
+.fancy-writing {
+  font-family: settings.$font-family-cursive;
+  font-weight: settings.$font-weight-base;
+  font-style: normal;
+}
+
+.ff-sans {
+  font-family: settings.$font-family-sans;
+  font-weight: settings.$font-weight-base;
+  font-style: normal;
+}
+
+.ff-sans-bold {
+  font-family: settings.$font-family-sans;
+  font-weight: settings.$font-weight-bold;
+  font-style: normal;
+}

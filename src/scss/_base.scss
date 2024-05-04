@@ -1,0 +1,5 @@
+@use 'settings';
+
+html, body {
+  font-family: settings.$font-family-sans;
+}
