@@ -5,7 +5,10 @@ $font-weight-bold: 700;
 
 $primary-color: #096A2E;
 $secondary-color: #8ABE53;
+$clr-body-bg: mix(white, $secondary-color, 90%);
 $white: #fff;
 $ddd-color: #dbefed;
 $sss-color: #CB1106;
 $qqq-color: #F64D08;
+
+$sp-base: 16px;

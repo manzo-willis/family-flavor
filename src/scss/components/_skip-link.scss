@@ -1,0 +1,29 @@
+@use "../settings";
+
+.skip-link {
+  position: absolute;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  inset: 0;
+  bottom: auto;
+  z-index: 9999;
+  background-color: mix(white, settings.$secondary-color, 10%);
+  padding: settings.$sp-base 0;
+  transform: translateY(-100%);
+
+  @media print {
+    display: none;
+  }
+
+  &:link,
+  &:active,
+  &:visited,
+  &:hover {
+    color: white;
+  }
+
+  &:focus {
+    transform: translateY(0);
+  }
+}

@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "npx eleventy --serve",
     "build:eleventy": "npx eleventy",
-    "build:sass": "sass --no-source-map --style=compressed src/scss/styles.scss public/css/styles.css"
+    "build:sass": "sass --no-source-map --style=compressed src/scss/styles.scss public/css/styles.css",
+    "watch:sass": "sass --no-source-map --watch --style=compressed src/scss/styles.scss public/css/styles.css"
   },
   "keywords": [],
   "author": "",

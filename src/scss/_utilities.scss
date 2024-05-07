@@ -1,0 +1,27 @@
+@use "settings";
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.space-in-between {
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  gap: settings.$sp-base;
+  align-items: center;
+  color: settings.$sss-color;
+  text-decoration: none;
+}
+
+.logo {
+  fill: currentColor;
+  width: 2.5rem;
+  height: 2.5rem;
+}

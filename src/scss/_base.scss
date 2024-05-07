@@ -1,5 +1,6 @@
 @use 'settings';
 
 html, body {
+  background-color: settings.$clr-body-bg;
   font-family: settings.$font-family-sans;
 }
