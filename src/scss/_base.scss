@@ -3,4 +3,24 @@
 html, body {
   background-color: settings.$clr-body-bg;
   font-family: settings.$font-family-sans;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  & > main {
+    flex: 1 0 auto;
+    margin: settings.$sp-base 0;
+  }
+
+  & > footer {
+    flex-shrink: 0;
+  }
+}
+
+h1, h2, h3, h4 {
+  font-family: settings.$font-family-cursive;
+  font-weight: settings.$font-weight-base;
 }
