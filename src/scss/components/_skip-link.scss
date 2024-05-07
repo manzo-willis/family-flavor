@@ -8,7 +8,7 @@
   inset: 0;
   bottom: auto;
   z-index: 9999;
-  background-color: mix(white, settings.$secondary-color, 10%);
+  background-color: mix(white, settings.$primary-color, 10%);
   padding: settings.$sp-base 0;
   transform: translateY(-100%);
 
