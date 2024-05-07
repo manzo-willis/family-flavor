@@ -8,6 +8,9 @@ layout: layouts/base.njk
   </header>
 
   <main class="post__content">
+    <img src="{{ image }}" alt="{{ title }}" />
+    <div>
     {{ content | safe }}
+    </div>
   </main>
 </article>
