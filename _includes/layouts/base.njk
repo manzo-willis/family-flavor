@@ -6,7 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>{{ title or metadata.title }}</title>
-    <link rel="icon" type=“image/x-icon” href="/images/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
 
     <meta property="og:title" content="{{ title or metadata.title | escape }}">
     <meta property="og:site_name" content="{{ metadata.title }}"/>
@@ -72,7 +73,7 @@
 
 <footer role="contentinfo">
     <div class="container">
-        <p>Copyright {{ helpers.currentYear() }} {{ metadata.title }}</p>
+        <p>Copyright {{ helpers.currentYear() }} {{ metadata.title }}, Powered by <a href="https://www.11ty.dev" target="_blank" rel="noopener">11ty</a></p>
     </div>
 </footer>
 </body>

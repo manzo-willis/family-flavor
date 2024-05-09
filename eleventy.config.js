@@ -11,7 +11,7 @@ module.exports = function(eleventyConfig) {
     return {
         // These are all optional:
         dir: {
-            input: "content",          // default: "."
+            input: "posts",          // default: "."
             includes: "../_includes",  // default: "_includes"
             data: "../_data",          // default: "_data"
             output: "_site"

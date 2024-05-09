@@ -1,12 +1,21 @@
-<ul class="post-list">
-    {% for post in postslist | reverse %}
-        <li class="post-list__item">
-            <article>
-                <img src="{{ post.data.image }}" alt="{{ post.data.title }}" />
-                <h3 class="post-list__title">
-                    <a href="{{ post.url }}">{{ post.data.title }}</a>
-                </h3>
-            </article>
-        </li>
-    {% endfor %}
-</ul>
+{% if postslist %}
+    <ul class="post-list">
+        {% for post in postslist | reverse %}
+            <li class="post-list__item">
+                <article>
+                    <img src="{{ post.data.image }}" alt="{{ post.data.title }}"/>
+                    <h3 class="post-list__title">
+                        <a href="{{ post.url }}">{{ post.data.title }}</a>
+                    </h3>
+                    <p class="post-list__prepare">
+                        <svg data-name="Layer 1" id="Layer_1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <title/>
+                            <path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20ZM13,6H11v7h6V11H13Z"/>
+                        </svg>
+                        {{ post.data.prepare }}
+                    </p>
+                </article>
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}

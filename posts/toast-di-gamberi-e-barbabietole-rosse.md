@@ -3,8 +3,8 @@ title: Toast di gamberi e barbabietole rosse
 image: "/img/photo_2024-05-07 14.06.05.jpeg"
 serve: 2
 prepare: 15 min
-total: 15 min
 tags: ["pesce", "pronti-in-20-minuti"]
+permalink: posts/{{ title | slug }}/index.html
 ---
 
 ## Ingredienti
